@@ -28,14 +28,15 @@ body {
 }
 
 
+body, html {
+    height: 100%;
+    width: 100%;
 
+}
 @media only screen and  (max-width: 668px) {
 
 
-    body, html {
-        height: 100%;
 
-    }
     /*--- Mobile portrait ---*/
     .center {
         position: absolute;
