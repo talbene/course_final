@@ -1,6 +1,5 @@
 
 
-
 html {
 
     box-sizing: border-box;
@@ -21,14 +20,111 @@ html {
 }
 
 
-
 body {
     font-size: 1em;
     font-family: sans-serif;
-    background-color: black;
     margin:0;
     padding:0;
 }
+
+
+
+@media only screen and  (max-width: 480px) {
+
+
+    body, html {
+        height: 100%;
+
+    }
+    /*--- Mobile portrait ---*/
+    .center {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+
+
+    img {
+        float: left;
+        width: 100%;
+        padding: 10px;
+
+
+    }
+
+
+    .itemInfo {
+        width: 100%;
+        float: right;
+        padding: 10px;
+
+    }
+
+
+    .itemForm {
+        width: 100%;
+        height: 25px;
+        font-size: 0.9em;
+        line-height: 0.9;
+        margin-top: 10px;
+    }
+
+
+    h1 {
+        font-size: 1.2em;
+        line-height: 0.9;
+        text-align: left;
+        margin: 0;
+    }
+
+
+    p {
+        float: left;
+        margin: 0;
+    }
+
+    form {
+        float: right;
+    }
+
+
+    .itemDescription {
+        float: right;
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+        padding: 10px;
+
+    }
+
+    .checkout{
+        height:10%;
+        width:100%;
+        position: absolute;
+        bottom: 10px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .checkoutBtn, .total .currencySymbol{
+        float:  right;
+    }
+
+    .total, .total+p {
+        float: left;
+    }
+
+
+    .linkBack {
+        top: 15px;
+        position: absolute;
+        right:  15px;
+    }
+
+}
+
+@media only screen and (min-width : 481px){
+
 
 .block {
     text-align: center;
@@ -51,25 +147,22 @@ body {
 .center {
     display: inline-block;
     vertical-align: middle;
-    width: 35%;
-    padding:15px;
+    width: 30%;
+    padding:20px;
     border: #a0a0a0 solid 1px;
-    background: #f5f5f5;
-}
-
+ }
 
 
 img {
     float: left;
     width: 25%;
-    height: auto;
+
 }
 
 
 .itemInfo {
     width: 70%;
     float: right;
-    padding: 0px;
 }
 
 
@@ -80,6 +173,7 @@ img {
     line-height: 0.9;
     margin-top: 10px;
 }
+
 
 h1 {
     font-size: 1.2em;
@@ -109,19 +203,22 @@ form {
 
 
 .checkout {
-    float: left;
+    float: right;
     margin-top: 80px;
-    width: 100%;
-
 }
 
-button, .total+p, .total, .checkout .currencySymbol{
+button{
     float:  right;
+}
+
+.total+p {
+    float: left;
 }
 
 
 .linkBack {
     float: left;
+    margin-top: 80px;
 
 }
 
@@ -129,24 +226,5 @@ button, .total+p, .total, .checkout .currencySymbol{
     margin-right: 15px;
 }
 
-
-
-@media only screen and (min-width : 300px) and (max-width : 480px) {
-    /*--- Mobile portrait ---*/
-    .inner {
-        height: 10%;
-        width: 80%;
-        left: 10%;
-        font-size: 0.75em;
-        bottom: 30px;
-        padding: 8px;
-
-    }
-
-    img {
-        top: 50px;
-        left: 20%;
-        width: 60%;
-    }
-
 }
+
